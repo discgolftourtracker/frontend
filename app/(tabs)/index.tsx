@@ -1,31 +1,14 @@
-import { StyleSheet } from 'react-native';
-
 import EditScreenInfo from '../../components/EditScreenInfo';
 import { Text, View } from '../../components/Themed';
+import { useTailwind } from 'tailwind-rn/dist';
 
 export default function TabOneScreen() {
+  const tw = useTailwind();
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Tab One</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="app/(tabs)/index.tsx" />
+    <View style={tw('flex-1 items-center justify-center')}>
+      <Text style={tw('text-xl font-bold')}>Tab One</Text>
+      <View style={tw('h-px my-8 w-4/5')} lightColor='#eee' darkColor='rgba(255,255,255,0.1)' />
+      <EditScreenInfo path='app/(tabs)/index.tsx' />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
-  },
-});

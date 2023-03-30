@@ -4,6 +4,8 @@ import { useFonts } from 'expo-font';
 import { SplashScreen, Stack } from 'expo-router';
 import { useEffect } from 'react';
 import { useColorScheme } from 'react-native';
+import { TailwindProvider } from 'tailwind-rn';
+import utilities from '../tailwind.json';
 
 export {
   // Catch any errors thrown by the Layout component.
@@ -39,13 +41,15 @@ function RootLayoutNav() {
   const colorScheme = useColorScheme();
 
   return (
-    <>
+
+    // @ts-ignore - Tailwind provider is missing a type definition
+    <TailwindProvider utilities={utilities}>
       <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
         <Stack>
           <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
           <Stack.Screen name="modal" options={{ presentation: 'modal' }} />
         </Stack>
       </ThemeProvider>
-    </>
+    </TailwindProvider>
   );
 }

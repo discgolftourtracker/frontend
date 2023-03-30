@@ -1,3 +1,23 @@
+*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  
+}
+
 .static {
   position: static
 }
@@ -18,6 +38,16 @@
   position: sticky
 }
 
+.my-80 {
+  margin-top: 20rem;
+  margin-bottom: 20rem
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem
+}
+
 .block {
   display: block
 }
@@ -34,8 +64,53 @@
   display: none
 }
 
+.h-80 {
+  height: 20rem
+}
+
+.h-8 {
+  height: 2rem
+}
+
+.h-1 {
+  height: 0.25rem
+}
+
+.h-px {
+  height: 1px
+}
+
+.w-4\/5 {
+  width: 80%
+}
+
+.flex-1 {
+  flex: 1 1 0%
+}
+
+.items-center {
+  align-items: center
+}
+
+.justify-center {
+  justify-content: center
+}
+
 .border {
   border-width: 1px
+}
+
+.pt-12 {
+  padding-top: 3rem
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem
+}
+
+.font-bold {
+  font-weight: 700
 }
 
 .uppercase {
@@ -46,14 +121,9 @@
   text-transform: capitalize
 }
 
-.text-blue-500 {
+.text-green-500 {
   --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity))
-}
-
-.text-red-500 {
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity))
+  color: rgb(34 197 94 / var(--tw-text-opacity))
 }
 
 .underline {
