@@ -38,9 +38,9 @@
   position: sticky
 }
 
-.my-80 {
-  margin-top: 20rem;
-  margin-bottom: 20rem
+.my-40 {
+  margin-top: 10rem;
+  margin-bottom: 10rem
 }
 
 .my-8 {
@@ -62,18 +62,6 @@
 
 .hidden {
   display: none
-}
-
-.h-80 {
-  height: 20rem
-}
-
-.h-8 {
-  height: 2rem
-}
-
-.h-1 {
-  height: 0.25rem
 }
 
 .h-px {

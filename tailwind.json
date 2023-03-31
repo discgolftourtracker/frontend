@@ -68,10 +68,10 @@
 			"position": "sticky"
 		}
 	},
-	"my-80": {
+	"my-40": {
 		"style": {
-			"marginTop": 320,
-			"marginBottom": 320
+			"marginTop": 160,
+			"marginBottom": 160
 		}
 	},
 	"my-8": {
@@ -98,21 +98,6 @@
 	"hidden": {
 		"style": {
 			"display": "none"
-		}
-	},
-	"h-80": {
-		"style": {
-			"height": 320
-		}
-	},
-	"h-8": {
-		"style": {
-			"height": 32
-		}
-	},
-	"h-1": {
-		"style": {
-			"height": 4
 		}
 	},
 	"h-px": {
