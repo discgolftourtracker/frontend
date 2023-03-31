@@ -38,11 +38,6 @@
   position: sticky
 }
 
-.my-40 {
-  margin-top: 10rem;
-  margin-bottom: 10rem
-}
-
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem
@@ -72,16 +67,8 @@
   width: 80%
 }
 
-.flex-1 {
-  flex: 1 1 0%
-}
-
 .items-center {
   align-items: center
-}
-
-.justify-center {
-  justify-content: center
 }
 
 .border {

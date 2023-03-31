@@ -1,5 +1,3 @@
-import { StyleSheet } from 'react-native';
-
 import EditScreenInfo from '../../components/EditScreenInfo';
 import { Text, View, ScrollView } from '../../components/Themed';
 import { useTailwind } from 'tailwind-rn/dist';

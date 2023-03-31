@@ -41,7 +41,6 @@ function RootLayoutNav() {
   const colorScheme = useColorScheme();
 
   return (
-
     // @ts-ignore - Tailwind provider is missing a type definition
     <TailwindProvider utilities={utilities}>
       <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
