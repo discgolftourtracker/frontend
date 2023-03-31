@@ -5,7 +5,6 @@ import { IScore } from '../interfaces';
 import Config from 'react-native-config';
 import data from '../data.json';
 
-
 const Scorecard = () => {
   const [scores, setScores] = useState<IScore[]>([]);
 
