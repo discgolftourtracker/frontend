@@ -71,6 +71,10 @@
   align-items: center
 }
 
+.justify-center {
+  justify-content: center
+}
+
 .border {
   border-width: 1px
 }
@@ -79,9 +83,23 @@
   padding-top: 3rem
 }
 
+.text-center {
+  text-align: center
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem
+}
+
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1
 }
 
 .font-bold {

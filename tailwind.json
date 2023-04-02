@@ -109,6 +109,11 @@
 			"alignItems": "center"
 		}
 	},
+	"justify-center": {
+		"style": {
+			"justifyContent": "center"
+		}
+	},
 	"border": {
 		"style": {
 			"borderTopWidth": 1,
@@ -122,10 +127,27 @@
 			"paddingTop": 48
 		}
 	},
+	"text-center": {
+		"style": {
+			"textAlign": "center"
+		}
+	},
+	"text-lg": {
+		"style": {
+			"fontSize": 18,
+			"lineHeight": 28
+		}
+	},
 	"text-xl": {
 		"style": {
 			"fontSize": 20,
 			"lineHeight": 28
+		}
+	},
+	"text-8xl": {
+		"style": {
+			"fontSize": 96,
+			"lineHeight": 1
 		}
 	},
 	"font-bold": {

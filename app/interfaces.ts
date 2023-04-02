@@ -1,5 +1,13 @@
 export interface IScore {
   ScoreID?: number | string,
+  Name: string,
+  ShortName: string,
+  HoleScores: string[],
+  GrandTotal: number
+}
+
+export interface IEvent {
+  ScoreID?: number | string,
   ShortName: string,
   HoleScores: string[],
   GrandTotal: number
@@ -67,4 +75,3 @@ export interface IScoreLong {
   Tied?: boolean;
   HoleScores: string[];
 }
-

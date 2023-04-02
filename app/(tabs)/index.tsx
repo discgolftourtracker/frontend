@@ -1,23 +1,54 @@
+// LIVE tab
+
 import React, { useState, useEffect } from 'react';
 import { View, Text, ScrollView } from '../../components/Themed';
 import { StyleSheet } from 'react-native';
-import { IScore } from '../interfaces';
+import { IScore, IEvent } from '../interfaces';
 import Config from 'react-native-config';
-import data from '../data.json';
+import * as event_data from '../../data/2023/ES/_65288/event.json';
+import * as round_1 from '../../data/2023/ES/_65288/MPO/rounds/1.json';
+import * as round_2 from '../../data/2023/ES/_65288/MPO/rounds/2.json';
+import * as round_3 from '../../data/2023/ES/_65288/MPO/rounds/3.json';
+import { toArray } from '../../assets/helpers/arrays';
+import { useTailwind } from 'tailwind-rn/dist';
+
 
 const Scorecard = () => {
   const [scores, setScores] = useState<IScore[]>([]);
+  const [event, setEvent] = useState<any>([]);
+  const tw = useTailwind();
+  
+  const fetchEvent = async (tournId?: number) => {
+    // try db first
+    // try {
 
-  const fetchScores = async () => {
+    // } catch (error) {
+    //   console.error(error);
+    // }
+
+    // try API if not in db
     try {
       // const response = await fetch(`${Config.ROUND_URL}`);
       // const json = await response.json();
       // setScores(json.data.scores);
-      const valid_scores = data?.data?.scores.map(player => {
+      setEvent(event_data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  const fetchScores = async (tournId?: number, division?: string, round?: number) => {
+    // toArray(round_data);
+    try {
+      // const response = await fetch(`${Config.ROUND_URL?TournID=${tournId}&Division=${division}&Round=${round}}`);
+      // const json = await response.json();
+      // setScores(json.data.scores);
+      const valid_scores = round_1?.data?.scores.map(player => {
         const valid_score: IScore = {
           ShortName: player.ShortName,
+          Name: player?.Name,
           HoleScores: player?.HoleScores,
-          GrandTotal: player?.GrandTotal
+          GrandTotal: player?.GrandTotal,
         };
 
         if(player?.ScoreID === null) valid_score.ScoreID = `DNF-${valid_score.ShortName}`;
@@ -31,8 +62,12 @@ const Scorecard = () => {
     }
   };
 
-  useEffect(() => {
-    fetchScores();
+  useEffect(() => {  
+    const fetchData = async () => {
+      await fetchEvent();
+      fetchScores();
+    };
+    fetchData();
   }, []);
 
   const renderHole = (score: string, index: number) => {
@@ -51,8 +86,15 @@ const Scorecard = () => {
     );
   };
 
+  // console.log(event);
+
   return (
     <ScrollView style={styles.container}>
+      <View style={tw('justify-center')}>
+        <Text style={tw('text-center text-xl')}>{event?.data?.Name}</Text>
+        <Text style={tw('text-center text-lg')}>{event?.data?.DateRange}</Text>
+        <Text style={tw('text-center text-lg')}>{event?.data?.LocationShort}</Text>
+      </View>
       <View style={styles.header}>
         <Text style={styles.name}>Name</Text>
         {[...Array(18)].map((_, i) => (
