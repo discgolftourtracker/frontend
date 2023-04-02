@@ -1,0 +1,398 @@
+{
+  "data": {
+    "DateRange": "Mar 17-19, 2023",
+    "EndDate": "2023-03-19",
+    "Country": "United States",
+    "Location": "Austin, Texas",
+    "LocationShort": "Austin, TX",
+    "Divisions": [
+      {
+        "Division": "MPO",
+        "DivisionName": "Mixed Pro Open",
+        "DivisionID": 100,
+        "Players": 116,
+        "LayoutAssignments": {
+          "1": 612471,
+          "2": 610950,
+          "3": 610950
+        },
+        "IsPro": true,
+        "ShortName": "Mixed Pro Open",
+        "AbbreviatedName": "Mixed Pro Open",
+        "LatestRound": "3"
+      },
+      {
+        "Division": "FPO",
+        "DivisionName": "Women's Pro Open",
+        "DivisionID": 105,
+        "Players": 53,
+        "LayoutAssignments": {
+          "1": 612472,
+          "2": 610951,
+          "3": 610951
+        },
+        "IsPro": true,
+        "ShortName": "Women's Pro Open",
+        "AbbreviatedName": "Women's Pro Open",
+        "LatestRound": "3"
+      }
+    ],
+    "Finals": "no",
+    "HighestCompletedRound": 3,
+    "LatestRound": "3",
+    "FinalRound": 3,
+    "Layouts": [
+      {
+        "LayoutID": 610950,
+        "CourseID": -1,
+        "CourseName": "",
+        "Name": "The Open Course at Harvey Penick - MPO",
+        "Holes": 18,
+        "Par": 61,
+        "Length": 8727,
+        "Units": "Feet",
+        "Accuracy": "M",
+        "Details": [
+          {
+            "Hole": "H1",
+            "Label": "1",
+            "Par": 3,
+            "Length": 462
+          },
+          {
+            "Hole": "H2",
+            "Label": "2",
+            "Par": 4,
+            "Length": 690
+          },
+          {
+            "Hole": "H3",
+            "Label": "3",
+            "Par": 3,
+            "Length": 354
+          },
+          {
+            "Hole": "H4",
+            "Label": "4",
+            "Par": 5,
+            "Length": 1028
+          },
+          {
+            "Hole": "H5",
+            "Label": "5",
+            "Par": 3,
+            "Length": 482
+          },
+          {
+            "Hole": "H6",
+            "Label": "6",
+            "Par": 3,
+            "Length": 316
+          },
+          {
+            "Hole": "H7",
+            "Label": "7",
+            "Par": 3,
+            "Length": 382
+          },
+          {
+            "Hole": "H8",
+            "Label": "8",
+            "Par": 3,
+            "Length": 330
+          },
+          {
+            "Hole": "H9",
+            "Label": "9",
+            "Par": 3,
+            "Length": 462
+          },
+          {
+            "Hole": "H10",
+            "Label": "10",
+            "Par": 3,
+            "Length": 398
+          },
+          {
+            "Hole": "H11",
+            "Label": "11",
+            "Par": 3,
+            "Length": 335
+          },
+          {
+            "Hole": "H12",
+            "Label": "12",
+            "Par": 4,
+            "Length": 660
+          },
+          {
+            "Hole": "H13",
+            "Label": "13",
+            "Par": 3,
+            "Length": 352
+          },
+          {
+            "Hole": "H14",
+            "Label": "14",
+            "Par": 3,
+            "Length": 300
+          },
+          {
+            "Hole": "H15",
+            "Label": "15",
+            "Par": 3,
+            "Length": 425
+          },
+          {
+            "Hole": "H16",
+            "Label": "16",
+            "Par": 4,
+            "Length": 515
+          },
+          {
+            "Hole": "H17",
+            "Label": "17",
+            "Par": 4,
+            "Length": 436
+          },
+          {
+            "Hole": "H18",
+            "Label": "18",
+            "Par": 4,
+            "Length": 800
+          }
+        ]
+      },
+      {
+        "LayoutID": 610951,
+        "CourseID": -1,
+        "CourseName": "",
+        "Name": "The Open Course at Harvey Penick - FPO",
+        "Holes": 18,
+        "Par": 62,
+        "Length": 7984,
+        "Units": "Feet",
+        "Accuracy": "M",
+        "Details": [
+          {
+            "Hole": "H1",
+            "Label": "1",
+            "Par": 4,
+            "Length": 600
+          },
+          {
+            "Hole": "H2",
+            "Label": "2",
+            "Par": 4,
+            "Length": 690
+          },
+          {
+            "Hole": "H3",
+            "Label": "3",
+            "Par": 3,
+            "Length": 354
+          },
+          {
+            "Hole": "H4",
+            "Label": "4",
+            "Par": 5,
+            "Length": 888
+          },
+          {
+            "Hole": "H5",
+            "Label": "5",
+            "Par": 3,
+            "Length": 355
+          },
+          {
+            "Hole": "H6",
+            "Label": "6",
+            "Par": 3,
+            "Length": 316
+          },
+          {
+            "Hole": "H7",
+            "Label": "7",
+            "Par": 3,
+            "Length": 340
+          },
+          {
+            "Hole": "H8",
+            "Label": "8",
+            "Par": 3,
+            "Length": 330
+          },
+          {
+            "Hole": "H9",
+            "Label": "9",
+            "Par": 3,
+            "Length": 315
+          },
+          {
+            "Hole": "H10",
+            "Label": "10",
+            "Par": 3,
+            "Length": 276
+          },
+          {
+            "Hole": "H11",
+            "Label": "11",
+            "Par": 3,
+            "Length": 335
+          },
+          {
+            "Hole": "H12",
+            "Label": "12",
+            "Par": 4,
+            "Length": 587
+          },
+          {
+            "Hole": "H13",
+            "Label": "13",
+            "Par": 3,
+            "Length": 310
+          },
+          {
+            "Hole": "H14",
+            "Label": "14",
+            "Par": 3,
+            "Length": 300
+          },
+          {
+            "Hole": "H15",
+            "Label": "15",
+            "Par": 3,
+            "Length": 425
+          },
+          {
+            "Hole": "H16",
+            "Label": "16",
+            "Par": 4,
+            "Length": 515
+          },
+          {
+            "Hole": "H17",
+            "Label": "17",
+            "Par": 4,
+            "Length": 436
+          },
+          {
+            "Hole": "H18",
+            "Label": "18",
+            "Par": 4,
+            "Length": 612
+          }
+        ]
+      },
+      {
+        "LayoutID": 612471,
+        "CourseID": -1,
+        "CourseName": "",
+        "Name": "The Open Course at Harvey Penick - MPO Rd1",
+        "Holes": 18,
+        "Par": 61,
+        "Length": 8727,
+        "Units": "Feet",
+        "Accuracy": "M",
+        "Details": []
+      },
+      {
+        "LayoutID": 612472,
+        "CourseID": -1,
+        "CourseName": "",
+        "Name": "The Open Course at Harvey Penick - FPO Rd1",
+        "Holes": 18,
+        "Par": 62,
+        "Length": 7984,
+        "Units": "Feet",
+        "Accuracy": "M",
+        "Details": []
+      }
+    ],
+    "LayoutIDs": [
+      {
+        "1": 612472,
+        "2": 610951,
+        "3": 610951,
+        "4": 610950,
+        "5": 610950,
+        "6": 610950,
+        "7": 610950,
+        "8": 610950,
+        "9": 610950,
+        "10": 610950,
+        "11": 610950,
+        "12": 610950,
+        "Division": "FPO",
+        "Pool": ""
+      },
+      {
+        "1": 612471,
+        "2": 610950,
+        "3": 610950,
+        "4": 610950,
+        "5": 610950,
+        "6": 610950,
+        "7": 610950,
+        "8": 610950,
+        "9": 610950,
+        "10": 610950,
+        "11": 610950,
+        "12": 610950,
+        "Division": "MPO",
+        "Pool": ""
+      }
+    ],
+    "Name": "The Open at Austin presented by Lone Star Disc",
+    "NameHtml": "The Open at Austin presented by Lone Star Disc",
+    "MultiLineName": {
+      "pre": "",
+      "main": "The Open at Austin",
+      "post": "presented by Lone Star Disc"
+    },
+    "MultiLineNameHtml": " <span class=\"event-name-main\">The Open at Austin</span> <span class=\"event-name-post\">presented by Lone Star Disc</span>",
+    "RawTier": "ES",
+    "Rounds": 3,
+    "RoundsList": {
+      "1": {
+        "Number": 1,
+        "Label": "Round 1",
+        "LabelAbbreviated": "Rd 1",
+        "Date": "2023-03-19",
+        "DateAbbreviated": "Mar 19",
+        "ShowDate": false
+      },
+      "2": {
+        "Number": 2,
+        "Label": "Round 2",
+        "LabelAbbreviated": "Rd 2",
+        "Date": "2023-03-19",
+        "DateAbbreviated": "Mar 19",
+        "ShowDate": false
+      },
+      "3": {
+        "Number": 3,
+        "Label": "Round 3",
+        "LabelAbbreviated": "Rd 3",
+        "Date": "2023-03-19",
+        "DateAbbreviated": "Mar 19",
+        "ShowDate": false
+      }
+    },
+    "Semis": "no",
+    "SimpleName": "DGPT - The Open at Austin",
+    "StartDate": "2023-03-17",
+    "TDName": "Neal Dambra",
+    "TDPDGANum": 200,
+    "Tier": "Disc Golf Pro Tour",
+    "FormattedTier": "Disc Golf Pro Tour",
+    "FormattedLongTier": "Disc Golf Pro Tour",
+    "TierPro": "ES",
+    "TierAm": "ES",
+    "TierX": false,
+    "TotalPlayers": 169,
+    "TournamentId": "65288",
+    "International": true
+  },
+  "hash": "b4d176cee7f2362f7b3e4a69966814cd"
+}
