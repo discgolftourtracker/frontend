@@ -1,4 +1,6 @@
 export interface IScore {
+  id: number,
+  expanded: boolean,
   ScoreID?: number | string,
   Name: string,
   ShortName: string,
@@ -7,15 +9,26 @@ export interface IScore {
   RunningPlace: number,
   RoundtoPar: number,
   RoundScore: number,
-  Played: number
-}
+  Played: number,
+  Holes?: IHoles[]
+};
+
+export interface IHoles {
+  Hole: string,
+  Label: string,
+  Par: number,
+  Length: number,
+  Units?: number | string | null,
+  Accuracy?: number | string | null,
+  Ordinal?: number
+};
 
 export interface IEvent {
   ScoreID?: number | string,
   ShortName: string,
   HoleScores: string[],
   GrandTotal: number
-}
+};
 
 export interface IScoreLong {
   ResultID?: number;
@@ -78,4 +91,4 @@ export interface IScoreLong {
   RunningPlace?: number;
   Tied?: boolean;
   HoleScores: string[];
-}
+};
