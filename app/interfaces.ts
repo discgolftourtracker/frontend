@@ -3,7 +3,11 @@ export interface IScore {
   Name: string,
   ShortName: string,
   HoleScores: string[],
-  GrandTotal: number
+  GrandTotal: number,
+  RunningPlace: number,
+  RoundtoPar: number,
+  RoundScore: number,
+  Played: number
 }
 
 export interface IEvent {

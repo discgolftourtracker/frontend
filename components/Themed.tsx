@@ -7,7 +7,8 @@ import {
   Text as DefaultText,
   useColorScheme,
   View as DefaultView,
-  ScrollView as DefaultScrollView
+  ScrollView as DefaultScrollView,
+  Button as DefaultButton
 } from 'react-native';
 
 import Colors from '../constants/Colors';
@@ -34,6 +35,7 @@ type ThemeProps = {
 export type TextProps = ThemeProps & DefaultText['props'];
 export type ViewProps = ThemeProps & DefaultView['props'];
 export type ScrollViewProps = ThemeProps & DefaultScrollView['props'];
+export type ButtonProps = ThemeProps & DefaultButton['props'];
 
 export function Text(props: TextProps) {
   const { style, lightColor, darkColor, ...otherProps } = props;
@@ -54,4 +56,11 @@ export function ScrollView(props: ScrollViewProps) {
   const backgroundColor = useThemeColor({ light: lightColor, dark: darkColor }, 'background');
 
   return <DefaultScrollView style={[{ backgroundColor }, style]} {...otherProps} />;
+}
+
+export function Button(props: ButtonProps) {
+  const { lightColor, darkColor, ...otherProps } = props;
+  const backgroundColor = useThemeColor({ light: lightColor, dark: darkColor }, 'background');
+
+  return <DefaultButton {...otherProps} />;
 }
