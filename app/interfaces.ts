@@ -7,6 +7,7 @@ export interface IScore {
   HoleScores: string[],
   GrandTotal: number,
   RunningPlace: number,
+  Tied: boolean,
   RoundtoPar: number,
   RoundScore: number,
   Played: number,
@@ -21,6 +22,11 @@ export interface IHoles {
   Units?: number | string | null,
   Accuracy?: number | string | null,
   Ordinal?: number
+};
+
+export interface IValidScores {
+  scores?: IScore[],
+  holes?: IHoles[]
 };
 
 export interface IEvent {
