@@ -1,29 +1,21 @@
 // LIVE tab
 
 import React, { useState, useEffect } from 'react';
-import { View, Text, ScrollView, Button } from '../../components/Themed';
-import { StyleSheet, TouchableOpacity, Animated, ActivityIndicator, Image, ImageBackground } from 'react-native';
+import { View, Text, ScrollView } from '../../components/Themed';
+import { TouchableOpacity } from 'react-native';
 import { IScore, IEvent, IHoles } from '../interfaces';
-import Config from 'react-native-config';
 import * as event_data from '../../data/_65288/event.json';
 import * as round_1 from '../../data/_65288/MPO/rounds/1.json';
-import * as round_2 from '../../data/_65288/MPO/rounds/2.json';
-import * as round_3 from '../../data/_65288/MPO/rounds/3.json';
-import { joinArray, toArray } from '../../assets/helpers/arrays';
+// import * as round_2 from '../../data/_65288/MPO/rounds/2.json';
+// import * as round_3 from '../../data/_65288/MPO/rounds/3.json';
+// import { joinArray, toArray } from '../../assets/helpers/arrays';
 import { useTailwind } from 'tailwind-rn/dist';
-
-interface IAllScores {
-  round: number,
-  division: string,
-  scores: IScore[]
-}
 
 const Scorecard = () => {
   const [scores, setScores] = useState<IScore[]>([]);
   const [event, setEvent] = useState<any>([]);
   const [holes, setHoles] = useState<IHoles[]>([]);
   const [rounds, setRounds] = useState<any>([]);
-  const [cardMoreInfo, setCardMoreInfo] = useState<boolean>(false);
   const tw = useTailwind();
 
   const collapsed_card_style = 'flex-row items-center justify-between py-1 h-9';
@@ -56,15 +48,15 @@ const Scorecard = () => {
     }
   };
 
-  const roundsToFetch = () => {
-    const all_rounds: any[] = [];
-    const all_divisions: string[] = event?.data?.Divisions.map((div: { Division: string, LatestRound: string }) => {
-      return {
-        division: div.Division,
-        rounds: parseInt(div.LatestRound)
-      }
-    });
-  };
+  // const roundsToFetch = () => {
+  //   const all_rounds: any[] = [];
+  //   const all_divisions: string[] = event?.data?.Divisions.map((div: { Division: string, LatestRound: string }) => {
+  //     return {
+  //       division: div.Division,
+  //       rounds: parseInt(div.LatestRound)
+  //     }
+  //   });
+  // };
 
   const fetchScores = async (tournId?: number, division?: string, round?: number) => {
     // toArray(round_data);
